@@ -10,12 +10,15 @@
     "build": "parcel build index.html && postcss css/tailwind.css -o public/build/tailwind.css",
     "clean": "rm -rf dist .cache",
     "gh-publish": "gh-pages -d dist",
-    "deploy": "yarn clean && yarn build && yarn gh-pages"
+    "deploy": "yarn clean && yarn build && yarn gh-publish"
   },
   "dependencies": {
     "autoprefixer": "^9.8.4",
     "postcss-cli": "^7.1.1",
     "postcss-modules": "^3.2.0",
     "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
