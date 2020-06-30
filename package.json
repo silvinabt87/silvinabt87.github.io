@@ -9,7 +9,7 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html && postcss css/tailwind.css -o public/build/tailwind.css",
     "clean": "rm -rf dist .cache",
-    "gh-publish": "gh-pages -d public",
+    "gh-publish": "gh-pages -d dist",
     "deploy": "yarn clean && yarn build && yarn gh-pages"
   },
   "dependencies": {
