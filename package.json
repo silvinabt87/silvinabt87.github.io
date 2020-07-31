@@ -1,13 +1,13 @@
 {
   "name": "my-own-portfolio",
   "version": "1.0.0",
-  "description": "website that contains my creations as a frontend developer",
+  "description": "website that portrays my creations as a frontend developer",
   "main": "index.js",
   "author": "silvina t",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html && postcss css/tailwind.css -o public/build/tailwind.css",
+    "build": "parcel build index.html CV.html && postcss css/tailwind.css -o public/build/tailwind.css",
     "clean": "rm -rf dist .cache",
     "gh-publish": "gh-pages -d dist",
     "deploy": "yarn clean && yarn build && yarn gh-publish"
@@ -17,7 +17,8 @@
     "gh-pages": "^3.1.0",
     "postcss-cli": "^7.1.1",
     "postcss-modules": "^3.2.0",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
