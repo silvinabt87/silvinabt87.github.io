@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:image" content="/Images/siljune2020.jpg" />
+    <link rel="icon" href="/Images/web-development.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varta&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="stylesheet" href="/public/build/tailwind.css" />
+    <title>Silvina T. — Code and Design</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta property="og:image" content="/Images/siljune2020.jpg" />
-  <title>Silvina T. — Code and Design</title>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/public/build/tailwind.css">
-</head>
-
-<body class="flex flex-col w-full inline-block font-display font-body">
-<main>
-  <section class="flex flex-col items-start w-full mt-48 min-h-screen">
-    <!-- Intro -->
-    <div class="flex flex-col w-full min-h-screen">
-      <div class="flex flex-col xl:ml-64 sm:ml-2  mb-20">
-        <h1 class="text-5xl tracking-wide font-semibold">Silvina Tamburini</h1>
-        <h3 class="text-3xl mt-3 ">I'm a Junior Front-End Developer...and I have something to say!</h3>
-        <h4 class="text-2xl mt-6 mb-3">silvinabt@gmail.com</h4>
-        <div class="flex flex-row space-x-1 mb-20">
-          <a href="https://twitter.com/siltambu" target="_blank">
-            <img src="Images/013-twitter-1.png" width="30" />
-          </a>
-          <a href="https://www.linkedin.com/in/silvina-tamburini/" target="_blank">
-            <img src="Images/010-linkedin.png" width="30" />
-          </a>
-          <a href="https://github.com/silvinabt87" target="_blank">
-            <img src="Images/github.png" width="30" />
-          </a>
-          <a href="https://stackoverflow.com/story/silvina-tamburini" target="_blank">
-            <img src="Images/icons8-stack-overflow-26.png" width="30" />
-          </a>
+  <body class="flex flex-col md:flex md:flex-col font-body">
+    <section
+      class="min-h-screen pt-24 flex flex-col items-center md:flex md:flex-col md:items-center"
+    >
+      <!-- Intro -->
+      <div
+        class="flex flex-col items-center md:flex md:flex-row md:justify-center md:items-center"
+      >
+        <div
+          class="flex flex-col self-center md:mx-16 md:flex md:justify-start md:text-left w-1/2 md:p-10"
+        >
+          <h3 class="text-3xl">Hi, there! I'm</h3>
+          <h1 class="text-5xl tracking-wide font-semibold">
+            Silvina Tamburini,
+          </h1>
+          <h3 class="text-3xl">a Front-End Developer</h3>
+          <h4 class="text-xl mt-3"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=silvinabt@gmail.com&tf=1" target="_blank">silvinabt@gmail.com</u></a></h4>
+          <div class="flex flex-row space-x-1 mb-3">
+            <a href="https://twitter.com/siltambu" target="_blank">
+              <img src="Images/013-twitter-1.png" width="30" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/silvina-tamburini/"
+              target="_blank"
+            >
+              <img src="Images/010-linkedin.png" width="30" class="inline" />
+            </a>
+            <a href="https://github.com/silvinabt87" target="_blank">
+              <img src="Images/github.png" width="30" class="inline" />
+            </a>
+            <a
+              href="https://stackoverflow.com/story/silvina-tamburini"
+              target="_blank"
+            >
+              <img
+                src="Images/icons8-stack-overflow-26.png"
+                width="30"
+                class=""
+              />
+            </a>
+          </div>
+      <div class="my-6"><u>Quick peek</u>: See an <a href="/CV.html" target="_blank"><b>exact copy of my CV</b></a> <br>I made with HTML & CSS (TailwindCSS)</a> </div>
+        </div>
+        <div
+          class="flex self-center w-1/2 mt-6 md:flex md:justify-center md:px-20"
+        >
+          <div class="bg-black-500">
+            <img src="/Images/silvina.jpg" class="shadow-xl rounded" alt="Silvina's pic" />
+          </div>
         </div>
       </div>
-      
-            <!-- Arrow -->
-            <div class="flex w-full self-end justify-center pb-1">
-                <img src="Images/Arrow-down.svg" width="30" />
-              </a>
-            </div>
-          </div>
-        </section>
+      <!-- Arrow -->
+      <div
+        class="hidden pt-8 md:pt-48 md:flex md:self-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      >
+        <a href="#gigs">
+          <img src="Images/Arrow-down.svg" width="30" />
+        </a>
+      </div>
+    </section>
 
-  <!-- Gigs section -->
-  <section id="gigs"class="min-h-screen w-full flex flex-col md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around items-center">
-
-      <div id="myself" class="card text-4xl max-w-sm min-h-1/2 rounded m-3 bg-green-200 overflow-hidden shadow-xl transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col">
-        <img class="w-full h-auto" src="Images/content-writer2.jpeg" alt="Language learning">
-        <div class="px-6 py-4 flex self-center items-center">
+    <!-- Gigs section -->
+    <section
+      id="gigs"
+      class="min-h-screen my-20 md:flex md:flex-row md:justify-around bg-gray-100 md:items-center"
+    >
+      <div
+        id="myself"
+        class="card text-4xl max-w-sm md:h-84 bg-isabelline-500 rounded m-3 overflow-hidden cursor-pointer shadow-xl transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+      >
+        <img class="" src="Images/content-writer2.jpeg" alt="typing-machine" />
+        <div class="px-6 py-4 flex self-center justify-center items-center">
           <h3 class="text-black text-2xl text-center tracking-tight">
-           About Myself
+            About Me
           </h3>
         </div>
       </div>
 
-     <div id="projects" class="card max-w-sm rounded m-3 bg-green-200 overflow-hidden shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col">
-        <img class="w-full h-auto" src="Images/webpage.jpeg" alt="Web design">
+      <div
+        id="projects"
+        class="card max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden cursor-pointer shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+      >
+        <img class="" src="Images/webpage.jpeg" alt="stationary-material" />
         <div class="px-6 py-4 flex self-center items-center tracking-tight">
           <h3 class="text-black text-2xl text-center">
             My Projects
@@ -65,34 +104,35 @@
         </div>
       </div>
 
-      <div id="hobbies" class="card max-w-sm rounded m-3 bg-green-200 overflow-hidden shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  hover:shadow-2xl sflex flex-col">
-        <img class="w-full h-auto filter-grayscale" src="Images/translator.jpg" alt="Translation">
-        <div class="px-6 py-4 flex flex-col self-center items-center tracking-tight">
+      <div
+        id="hobbies"
+        class="card max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden cursor-pointer shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+      >
+        <img
+          class="w-full h-auto filter-grayscale"
+          src="Images/translator.jpg"
+          alt="book"
+        />
+        <div
+          class="px-6 py-4 flex flex-col self-center items-center tracking-tight"
+        >
           <h3 class="text-black text-2xl text-center">
-          My Hobbies and Interests
+            My Hobbies and Interests
           </h3>
         </div>
       </div>
+    </section>
 
-</section>
-
-<!-- Render area -->
-<section id="renderArea">
-
-</section>
-
-  <script src="/index.js"></script>
-</main>
-  <!-- <footer class="mt-10">
-    
-      Icons made by
-      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-      >Smashicons</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-  
-  </footer> -->
-</body>
-
+    <!-- Render area -->
+    <iframe class="min-h-screen"></iframe>
+    <script src="/index.js"></script>
+    <footer class="font-body text-sm flex justify-between m-3">
+             <span>Icons made by Freepik from www.flaticon.com</span
+          >
+        </span>
+        <span class="text-lg text-semibold font-bold">-Life is either a daring adventure or nothing at all-  Helen Keller,
+          <i>The Open Door</i></span
+        > 
+    </footer>
+  </body>
 </html>
