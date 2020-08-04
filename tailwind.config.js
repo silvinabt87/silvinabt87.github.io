@@ -1,19 +1,20 @@
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.html"],
   theme: {
-    // screens: {
-    //   'sm': '640px',
-    //   // => @media (min-width: 640px) { ... }
+    screens: {
+      'xs': '480px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
 
-    //   'md': '768px',
-    //   // => @media (min-width: 768px) { ... }
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
 
-    //   'lg': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
-    //   'xl': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // },
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     fontFamily: {
       body: ["Varta", "sans-serif"],
       display: ["Varta", "sans-serif"],
