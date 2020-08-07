@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="/public/build/tailwind.css" />
     <title>Silvina T. — Résumé</title>
   </head>
-  <body>
-    <div class="flex flex-row justify-between items-center mx-12 my-24">
+  <body class="overflow-x-hidden">
+    <div
+      class="flex flex-col md:flex-row md:justify-between md:items-center md:mx-12 md:my-24 my-5"
+    >
       <h1
-        class="text-5xl font-title font-black tracking-wider text-blue-600 ml-20"
+        class="text-5xl font-title font-black tracking-wider text-blue-600 md:ml-20 md:text-center m-5"
       >
         Silvina B. Tamburini
       </h1>
-      <div class="flex flex-col items-end text-xs font-title">
+      <div class="flex flex-col md:items-end text-xs font-title m-5">
         <span>Buenos Aires, Argentina</span>
         <span>+5491135763044</span>
         <span>
@@ -40,7 +42,9 @@
         >
       </div>
     </div>
-    <div class="mx-96 text-justify text-lg font-paragraph text-gray-800">
+    <div
+      class="md:mx-96 mx-2 text-justify text-lg font-paragraph text-gray-800"
+    >
       <p>
         <i
           >My love for languages has taken me to explore other paths throughout
@@ -58,13 +62,13 @@
       </p>
     </div>
     <!-- Résumé Body -->
-    <hr class="text-aquamarine border my-12 mx-32" />
+    <hr class="text-aquamarine border md:my-12 md:mx-32 my-5" />
     <div class="font-title">
       <!-- skills section -->
       <!-- section 1 -->
-      <div class="flex flex-row mx-32">
+      <div class="flex flex-col md:flex-row md:mx-32 m-5">
         <h3 class="text-light-blue-600"><b>Technical Skills</b></h3>
-        <div class="flex flex-row ml-64">
+        <div class="flex flex-row md:ml-64 m-5">
           <h4><b>Likes:</b></h4>
           <p class="ml-10">
             html css bootstrap-4 javascript tailwind-css yarn npm docker reactjs
@@ -72,11 +76,11 @@
         </div>
       </div>
       <!-- section 2 -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row ml-32">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row md:ml-32 m-5">
         <h3 class="text-light-blue-600"><b>Experience</b></h3>
-        <div class="flex flex-col ml-72 mr-32">
-          <div class="flex flex-row justify-between">
+        <div class="flex flex-col md:ml-72 md:mr-32 my-5">
+          <div class="flex flex-col md:flex-row justify-between">
             <h4>
               <b>UX designer </b>–
               <u
@@ -102,10 +106,10 @@
         </div>
       </div>
       <!-- section 3 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
 
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Content Writer </b>–
             <u
@@ -124,10 +128,10 @@
         </p>
       </div>
       <!-- section 4 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
 
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Customer Service Representative </b>–
             <u
@@ -148,10 +152,10 @@
       </div>
 
       <!-- section 5 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
 
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Teacher of English as a Foreign Language </b>–
             <u
@@ -172,9 +176,9 @@
         </p>
       </div>
       <!-- section 6 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Teacher of English as a Foreign Language </b>–
             <u
@@ -197,11 +201,11 @@
       </div>
       <!-- education section -->
       <!-- section 1 -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row justify-between mx-32">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row justify-between md:mx-32 m-5">
         <h3 class="text-light-blue-600"><b>Education</b></h3>
-        <div class="flex flex-col">
-          <div class="flex flex-row justify-between">
+        <div class="flex flex-col my-5">
+          <div class="flex flex-col md:flex-row justify-between">
             <h4>
               <b>Teacher of English as a Second and Foreign Language </b>–
               <u
@@ -213,7 +217,9 @@
                 ></u
               >
             </h4>
-            <span class="text-gray-700 ml-20"><i>Mar 2011 → Nov 2018</i></span>
+            <span class="text-gray-700 md:ml-20"
+              ><i>Mar 2011 → Nov 2018</i></span
+            >
           </div>
           <br />
           <p>
@@ -224,11 +230,11 @@
       </div>
       <!-- certification section -->
       <!-- section 1 -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row mx-32 justify-between">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row md:mx-32 m-5 justify-between">
         <h3 class="text-light-blue-600"><b>Certifications</b></h3>
-        <div class="flex flex-col">
-          <div class="flex flex-row">
+        <div class="flex flex-col my-5">
+          <div class="flex flex-col md:flex-row">
             <h4>
               <b>Advanced JavaScript Programmer </b>–
               <u
@@ -237,7 +243,9 @@
                 </a></u
               >
             </h4>
-            <span class="text-gray-700 ml-100"><i>Jun 2020 → Jul 2020</i></span>
+            <span class="text-gray-700 md:ml-100"
+              ><i>Jun 2020 → Jul 2020</i></span
+            >
           </div>
           <p>
             javascript, ajax, node.js
@@ -245,9 +253,9 @@
         </div>
       </div>
       <!-- section 2 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Learn CSS Animations </b>–
             <u><a href="https://scrimba.com/" target="_blank"> Scrimba </a></u>
@@ -260,9 +268,9 @@
         </p>
       </div>
       <!-- section 3 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Learn Flexbox </b>–
             <u><a href="https://scrimba.com/" target="_blank"> Scrimba </a></u>
@@ -274,9 +282,9 @@
         </p>
       </div>
       <!-- section 4 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Docker for the Absolute Beginner- Hands On </b>–
             <u
@@ -295,9 +303,9 @@
         </p>
       </div>
       <!-- section 5 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Learn TailwindCSS</b>–
             <u><a href="https://scrimba.com/" target="_blank"> Scrimba </a></u>
@@ -310,9 +318,9 @@
         </p>
       </div>
       <!-- section 6 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Responsive Web Design Certification</b>–
             <u
@@ -332,11 +340,13 @@
       </div>
       <!-- projects & interests section -->
       <!-- section 1 -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row mx-32">
-        <h3 class="text-light-blue-600"><b>Projects & Interests</b></h3>
-        <div class="flex flex-col ml-56 ">
-          <div class="flex flex-row">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row md:mx-32 m-5">
+        <h3 id="projects&interests" class="text-light-blue-600">
+          <b>Projects & Interests</b>
+        </h3>
+        <div class="flex flex-col md:ml-56 my-5">
+          <div class="flex flex-col md:flex-row">
             <h4>
               <b>Movies Buff - A Mimics Game </b>–
               <u
@@ -347,18 +357,20 @@
                 </a></u
               >
             </h4>
-            <span class="text-gray-700 ml-100"><i>May 2020 → Current</i></span>
+            <span class="text-gray-700 md:ml-100"
+              ><i>May 2020 → Current</i></span
+            >
           </div>
           <span class="mb-10">html, css, javascript, yarn, git, github</span>
           <p>
-            A say-it-with-mimics game in HTML, CSS and JS
+            A say-it-with-mimics game in HTML, CSS and JS.
           </p>
         </div>
       </div>
       <!-- section 2 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Pythocs Docs ES </b>–
             <u
@@ -378,9 +390,9 @@
         </p>
       </div>
       <!-- section 3 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>My Own Portfolio Website </b>–
             <u
@@ -403,8 +415,8 @@
         </p>
       </div>
       <!-- section 4 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
         <div class="flex flex-row justify-between">
           <h4>
             <b>JavaScript Challenges </b>–
@@ -428,9 +440,9 @@
         </p>
       </div>
       <!-- section 5 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>Creative Commons Contributor </b>–
             <u
@@ -460,33 +472,30 @@
         </p>
       </div>
       <!-- section 6 -->
-      <hr class="text-aquamarine border my-12 ml-103 mr-32" />
-      <div class="flex flex-col ml-103 mr-32">
-        <div class="flex flex-row justify-between">
+      <hr class="text-aquamarine border md:my-12 md:ml-103 md:mr-32" />
+      <div class="flex flex-col md:ml-103 md:mr-32 m-5">
+        <div class="flex flex-col md:flex-row justify-between">
           <h4>
             <b>UX Contributor for PyCamp ES </b>–
             <u
-              ><a
-                href="https://github.com/silvinabt87/pycampes"
-                target="_blank"
+              ><a href="https://github.com/silvinabt87/pycampes" target="_blank"
                 >Github Repository</a
               ></u
             >
           </h4>
           <span class="text-gray-700"><i>Mar 2020 → Apr 2020</i></span>
         </div>
-        <span class="mb-10">dhtml, javascript, css, git, github</span>
+        <span class="mb-10">html, javascript, css, git, github</span>
         <p>
-          Volunteer contributor to UX design of the website for PyCamp Spain
-          2020.
-        </p>
+          Volunteer contributor to UX design of the PyCamp Spain
+          2020<a href="https://pycamp.es/" target="_blank"><b> website</b></a>.
       </div>
       <!-- readings -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row mx-32 justify-between">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row md:mx-32 m-5 justify-between">
         <h3 class="text-light-blue-600"><b>Readings</b></h3>
-        <div class="flex flex-col ml-73">
-          <div class="flex flex-row ">
+        <div class="flex flex-col md:ml-73 my-5">
+          <div class="flex flex-row my-5">
             <h4>
               <a
                 href="https://medicalxpress.com/news/2020-06-language-brain-scans-reveal-coding.html"
@@ -509,12 +518,12 @@
         </div>
       </div>
       <!-- tools section -->
-      <hr class="text-aquamarine border my-12 mx-32" />
-      <div class="flex flex-row mx-32 mb-24">
+      <hr class="text-aquamarine border md:my-12 md:mx-32" />
+      <div class="flex flex-col md:flex-row md:mx-32 md:mb-24 m-5">
         <h3 class="text-light-blue-600"><b>Tools</b></h3>
-        <div class="flex flex-row ml-84">
+        <div class="flex flex-col md:flex-row md:ml-84 my-5">
           <h4><b>Favourite Editor:</b></h4>
-          <p class="ml-10">
+          <p class="md:ml-10">
             Visual Studio Code
           </p>
         </div>

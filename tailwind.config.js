@@ -1,19 +1,20 @@
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.html"],
   theme: {
-    // screens: {
-    //   'sm': '640px',
-    //   // => @media (min-width: 640px) { ... }
+    screens: {
+      'xs': '480px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
 
-    //   'md': '768px',
-    //   // => @media (min-width: 768px) { ... }
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
 
-    //   'lg': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
-    //   'xl': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // },
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     fontFamily: {
       body: ["Varta", "sans-serif"],
       display: ["Varta", "sans-serif"],
@@ -75,28 +76,28 @@ module.exports = {
           "900": "#484645",
         },
         blue: {
-          100: "#EBF2F7",
-          200: "#CEDFEC",
-          300: "#B1CCE0",
-          400: "#76A5C8",
-          500: "#3B7FB1",
-          600: "#35729F",
-          700: "#234C6A",
-          800: "#1B3950",
-          900: "#122635",
+          "100": "#EBF2F7",
+          "200": "#CEDFEC",
+          "300": "#B1CCE0",
+          "400": "#76A5C8",
+          "500": "#3B7FB1",
+          "600": "#35729F",
+          "700": "#234C6A",
+          "800": "#1B3950",
+          "900": "#122635",
         },
         "light-blue": {
-          100: "#F4FAFE",
-          200: "#E3F2FE",
-          300: "#D3EAFD",
-          400: "#B1DAFB",
-          500: "#90CAF9",
-          600: "#82B6E0",
-          700: "#567995",
-          800: "#415B70",
-          900: "#2B3D4B",
+          "100": "#F4FAFE",
+          "200": "#E3F2FE",
+          "300": "#D3EAFD",
+          "400": "#B1DAFB",
+          "500": "#90CAF9",
+          "600": "#82B6E0",
+          "700": "#567995",
+          "800": "#415B70",
+          "900": "#2B3D4B",
         },
-        aquamarine: "#03a9f4",
+        "aquamarine": "#03a9f4",
       },
     },
   },

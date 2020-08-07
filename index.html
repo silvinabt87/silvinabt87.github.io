@@ -16,7 +16,7 @@
 
   <body class="flex flex-col md:flex md:flex-col font-body">
     <section
-      class="min-h-screen pt-24 flex flex-col items-center md:flex md:flex-col md:items-center"
+      class="min-h-screen pt-24 flex flex-col items-center md:flex md:flex-col md:items-center xs:items-center"
     >
       <!-- Intro -->
       <div
@@ -92,62 +92,85 @@
     <!-- Gigs section -->
     <section
       id="gigs"
-      class="min-h-screen my-20 md:flex md:flex-row md:justify-around bg-gray-100 md:items-center"
+      class="min-h-screen mt-20 md:flex md:flex-row md:justify-around bg-gray-100 md:items-center"
     >
       <div
         id="myself"
-        class="card text-4xl max-w-sm md:h-84 bg-isabelline-500 rounded m-3 overflow-hidden shadow-xl transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+        class="card cursor-pointer text-4xl max-w-sm md:h-84 bg-isabelline-500 rounded m-3 overflow-hidden md:shadow-xl shadow-md transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
       >
-        <img class="" src="Images/content-writer2.jpeg" alt="typing-machine" />
-        <div class="px-6 py-4 flex self-center justify-center items-center">
-          <h3 class="text-black text-2xl text-center tracking-tight">
-            <a href="/myself.html">About Me</a>
+        <img
+          id="myself"
+          class=""
+          src="Images/content-writer2.jpeg"
+          alt="typing-machine"
+        />
+        <div
+          id="myself"
+          class="px-6 py-4 flex self-center justify-center items-center"
+        >
+          <h3
+            id="myself"
+            class="text-black text-2xl text-center tracking-tight"
+          >
+            About Me
           </h3>
         </div>
       </div>
 
       <div
         id="projects"
-        class="card max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+        class="card cursor-pointer max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden md:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
       >
-        <img class="" src="Images/webpage.jpeg" alt="stationary-material" />
-        <div class="px-6 py-4 flex self-center items-center tracking-tight">
-          <h3 class="text-black text-2xl text-center">
-            <a href="/projects.html">My Projects</a>
+        <img
+          id="projects"
+          class=""
+          src="Images/webpage.jpeg"
+          alt="stationary-material"
+        />
+        <div
+          id="projects"
+          class="px-6 py-4 flex self-center items-center tracking-tight"
+        >
+          <h3 id="projects" class="text-black text-2xl text-center">
+            My Projects
           </h3>
         </div>
       </div>
 
       <div
         id="hobbies"
-        class="card max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl flex flex-col"
+        class="card cursor-pointer max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden md:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
       >
         <img
+          id="hobbies"
           class="w-full h-auto filter-grayscale"
           src="Images/translator.jpg"
           alt="book"
         />
         <div
+          id="hobbies"
           class="px-6 py-4 flex flex-col self-center items-center tracking-tight"
         >
-          <h3 class="text-black text-2xl text-center">
-            <a href="/hobbies.html">My Hobbies and Interests</a>
+          <h3 id="hobbies" class="text-black text-2xl text-center">
+           <a href="#"> My Hobbies and Interests</a>
           </h3>
         </div>
       </div>
     </section>
 
     <!-- Render area -->
-    <iframe class="min-h-screen"></iframe>
+    <iframe src="" class="min-h-screen md:my-16 my-12 overflow-y-hidden"> </iframe>
+
+    <!-- Footer -->
     <footer
-      class="font-body text-sm md:flex md:flex-row md:justify-between m-3 flex flex-col"
+      class="font-body text-sm md:flex md:flex-row md:justify-between md:mt-16 md:overflow-y-hidden m-3 flex flex-col"
     >
       <span class="text-lg text-semibold font-bold"
-        >-Life is either a daring adventure or nothing at all- Helen Keller,
+        >-Life is either a daring adventure or nothing at all - Helen Keller,
         <i>The Open Door</i></span
       >
       <span class="m-3">Icons made by Freepik from www.flaticon.com</span>
-      <!-- <script src="/index.js"></script> -->
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>
