@@ -1,18 +1,19 @@
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.html"],
   theme: {
     screens: {
-      'xs': '480px',
-      'sm': '640px',
+      xs: "480px",
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
     fontFamily: {
@@ -97,10 +98,19 @@ module.exports = {
           "800": "#415B70",
           "900": "#2B3D4B",
         },
-        "aquamarine": "#03a9f4",
+        aquamarine: "#03a9f4",
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    plugin(function ({addUtilities}) {
+      const newUtilities = {
+        ".scroll-smooth": {
+          "scroll-behavior": "smooth",
+        },
+      };
+      addUtilities(newUtilities);
+    }),
+  ],
 };
