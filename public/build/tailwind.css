@@ -24837,10 +24837,6 @@ video {
   scroll-behavior: smooth;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 @media (min-width: 480px) {
   .xs\:container {
     width: 100%;

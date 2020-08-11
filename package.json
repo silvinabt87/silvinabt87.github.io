@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html CV.html myself.html hobbies.html projects.html && postcss css/tailwind.css -o public/build/tailwind.css",
+    "build": "parcel build index.html CV.html myself.html hobbies.html projects.html index.js && postcss css/tailwind.css -o public/build/tailwind.css",
     "clean": "rm -rf dist .cache",
     "gh-publish": "gh-pages -d dist",
     "deploy": "yarn clean && yarn build && yarn gh-publish"
