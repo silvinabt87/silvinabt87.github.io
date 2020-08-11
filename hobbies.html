@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,8 @@
     />
     <link rel="stylesheet" href="/public/build/tailwind.css" />
   </head>
-  <body>
-    <div class="flex flex-col items-center font-body md:mb-24 mb-16">
+  <body class="min-h-screen">
+    <div class="flex flex-col items-center font-body">
       <h1 class="text-5xl tracking-wide font-semibold text-center m-6">
         My Hobbies
       </h1>
@@ -20,7 +20,14 @@
         In the meantime, check out my<a href="https://twitter.com/siltambu" target="_blank"><b> Twitter account</b></a>
         to know me better
       </p>
-      <img src="/Images/happy-bunch2.png" class="flex self-center m-10" />
+      <img src="/Images/happy-bunch2.png" class="flex self-center mt-10" />
     </div>
+    <div 
+        class="flex pt-8 lg:pt-10 lg:mb-16 items-center flex flex-col"
+      >
+        <button id="buttonUp" class="bg-isabelline-500 rounded-full border-isabelline-900 border-2 lg:p-3 p-2 transition duration-500 ease-in-out transform hover:scale-110 lg:shadow-xl shadow-md lg:hover:shadow-2xl hover:shadow-lg">Go to previous section</button>
+      </div>
+    </section>
+    <script src="/index.js"></script>
   </body>
 </html>

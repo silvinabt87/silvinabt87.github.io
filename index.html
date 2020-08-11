@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,30 +14,32 @@
     <title>Silvina T. — Code and Design</title>
   </head>
 
-  <body class="flex flex-col md:flex md:flex-col font-body">
+  <body class="flex flex-col lg:flex lg:flex-col font-body">
     <section
-      class="min-h-screen pt-20 flex flex-col items-center md:flex md:flex-col md:items-center xs:items-center"
+      class="min-h-screen pt-20 flex flex-col items-center lg:flex lg:flex-col lg:items-center xs:items-center"
     >
       <!-- Intro -->
       <div
-        class="flex flex-col items-center md:flex md:flex-row md:justify-center md:items-center"
+        class="flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:items-center"
       >
         <div
-          class="flex flex-col self-center md:mx-16 md:flex md:justify-start md:text-left w-1/2 md:p-10"
+          class="flex flex-col self-center lg:mx-16 lg:flex lg:justify-start lg:text-left w-1/2 lg:p-10 md:mx-4"
         >
-          <h3 class="text-3xl">Hi, there! I'm</h3>
+          <!-- <div class="md:flex md:flex-row"> -->
+          <h3 class="text-3xl">Hi there! I'm</h3>
           <h1 class="text-5xl tracking-wide font-semibold">
             Silvina Tamburini,
           </h1>
+          <!-- </div> -->
           <h3 class="text-3xl">a Front-End Developer</h3>
-          <h4 class="text-xl mt-3">
+          <h4 class="text-xl mt-6">
             <a
               href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=silvinabt@gmail.com&tf=1"
               target="_blank"
               >silvinabt@gmail.com</a
             >
           </h4>
-          <div class="flex flex-row space-x-1 mb-3">
+          <div class="flex flex-row space-x-1 mt-3 mb-3">
             <a href="https://twitter.com/siltambu" target="_blank">
               <img src="Images/013-twitter-1.png" width="30" />
             </a>
@@ -67,12 +69,14 @@
             >that <br />I made with HTML & CSS (TailwindCSS)
           </div>
           <div>
-            <p class="text-sm">(Note: I'm constantly improving this website's
-            UX/UI.<br>Feel free to send me any feedback on your experience with it!)</p>
+            <p class="text-sm">
+              (Note: I'm constantly improving this website's UX/UI.<br />Feel
+              free to send me any feedback on your experience with it!)
+            </p>
           </div>
         </div>
         <div
-          class="flex self-center w-1/2 mt-6 md:flex md:justify-center md:px-20"
+          class="flex self-center w-1/2 mt-6 lg:flex lg:justify-center lg:px-20"
         >
           <div class="bg-black-500">
             <img
@@ -85,36 +89,39 @@
       </div>
       <!-- Arrow -->
       <div
-        class="hidden pt-8 md:pt-48 md:flex md:self-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+        class="hidden pt-8 lg:pt-36 lg:flex lg:self-center transition duration-500 ease-in-out transform hover:scale-110"
       >
-        <a href="#gigs">
-          <img src="Images/Arrow-down.svg" width="30" />
-        </a>
+        <img
+          id="arrow"
+          src="Images/Arrow-down.svg"
+          width="30"
+          class="cursor-pointer"
+        />
       </div>
     </section>
 
     <!-- Gigs section -->
     <section
       id="gigs"
-      class="min-h-screen mt-20 md:flex md:flex-row md:justify-around bg-gray-100 md:items-center"
+      class="min-h-screen mt-20 lg:flex lg:flex-row lg:justify-around bg-gray-100 lg:items-center md:flex md:flex-col md:items-center"
     >
       <div
         id="myself"
-        class="card cursor-pointer text-4xl max-w-sm md:h-84 bg-isabelline-500 rounded m-3 overflow-hidden md:shadow-xl shadow-md transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
+        class="card cursor-pointer text-4xl max-w-sm lg:h-84 bg-isabelline-500 rounded m-3 overflow-hidden lg:shadow-xl shadow-md transition rotateY-180 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lg:hover:shadow-2xl hover:shadow-lg flex flex-col md:h-auto"
       >
         <img
           id="myself"
-          class=""
+          class="card"
           src="Images/content-writer2.jpeg"
           alt="typing-machine"
         />
         <div
           id="myself"
-          class="px-6 py-4 flex self-center justify-center items-center"
+          class="card px-6 py-4 flex self-center justify-center items-center"
         >
           <h3
             id="myself"
-            class="text-black text-2xl text-center tracking-tight"
+            class="card text-black text-2xl text-center tracking-tight"
           >
             About Me
           </h3>
@@ -123,19 +130,19 @@
 
       <div
         id="projects"
-        class="card cursor-pointer max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden md:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
+        class="card cursor-pointer max-w-sm lg:h-84 rounded m-3 bg-isabelline-500 overflow-hidden lg:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lg:hover:shadow-2xl hover:shadow-lg flex flex-col"
       >
         <img
           id="projects"
-          class=""
+          class="card"
           src="Images/webpage.jpeg"
           alt="stationary-material"
         />
         <div
           id="projects"
-          class="px-6 py-4 flex self-center items-center tracking-tight"
+          class="card px-6 py-4 flex self-center items-center tracking-tight"
         >
-          <h3 id="projects" class="text-black text-2xl text-center">
+          <h3 id="projects" class="card text-black text-2xl text-center">
             My Projects
           </h3>
         </div>
@@ -143,32 +150,31 @@
 
       <div
         id="hobbies"
-        class="card cursor-pointer max-w-sm md:h-84 rounded m-3 bg-isabelline-500 overflow-hidden md:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:hover:shadow-2xl hover:shadow-lg flex flex-col"
+        class="card cursor-pointer max-w-sm lg:h-84 rounded m-3 bg-isabelline-500 overflow-hidden lg:shadow-xl shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lg:hover:shadow-2xl hover:shadow-lg flex flex-col"
       >
         <img
           id="hobbies"
-          class="w-full h-auto filter-grayscale"
+          class="card w-full h-auto filter-grayscale"
           src="Images/translator.jpg"
           alt="book"
         />
         <div
           id="hobbies"
-          class="px-6 py-4 flex flex-col self-center items-center tracking-tight"
+          class="card px-6 py-4 flex flex-col self-center items-center tracking-tight"
         >
-          <h3 id="hobbies" class="text-black text-2xl text-center">
-           My Hobbies and Interests
+          <h3 id="hobbies" class="card text-black text-2xl text-center">
+            My Hobbies and Interests
           </h3>
         </div>
       </div>
     </section>
 
     <!-- Render area -->
-    <iframe src="" class="min-h-screen md:my-16 my-12 overflow-y-hidden">
-    </iframe>
+    <div id="render"></div>
 
     <!-- Footer -->
     <footer
-      class="font-body text-sm md:flex md:flex-row md:justify-between md:mt-16 md:overflow-y-hidden m-3 flex flex-col"
+      class="font-body text-sm lg:flex lg:flex-row lg:justify-between lg:mt-12 m-2 flex flex-col"
     >
       <span class="text-lg text-semibold font-bold"
         >-Life is either a daring adventure or nothing at all - Helen Keller,
